@@ -1,0 +1,263 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[mmddyyyy]{datetime}
+\usepackage[dvipsnames]{xcolor}
+
+\usepackage[left=0.75in,top=1.2in,right=0.75in,bottom=1.2in]{geometry} % Document margins
+
+
+
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Dongjin Choi} % Your name
+\address{Klaus Advanced Computing Building, 1305} % Your address
+\address{266 Ferst Drive, Atlanta, GA 30332, USA} % Your secondary addess (optional)
+\address{\href{https://www.cc.gatech.edu/~dchoi85/}{www.cc.gatech.edu/$\sim$dchoi85/} \\ \href{mailto:jin.choi@gatech.edu}{jin.choi@gatech.edu}} % Your phone number and email
+
+\renewenvironment{rSection}[1]{
+	\sectionskip
+	\textcolor{Black}{\MakeUppercase{#1}}
+	\sectionlineskip
+	\hrule
+	\begin{list}{}{
+			\setlength{\leftmargin}{1.5em}
+		}
+		\item[]
+	}{
+	\end{list}
+}
+
+
+\urlstyle{same}
+\pagestyle{plain} 
+\pagestyle{fancy}
+\fancyfoot[R]{Last updated: \today} %set date/time on right
+\renewcommand{\headrulewidth}{0pt} % remove awful top bar
+\begin{document}
+	
+	%----------------------------------------------------------------------------------------
+	%	Interest SECTION
+	%----------------------------------------------------------------------------------------
+%	\pagestyle{headings}
+%	\fancyhead{} %clear out default
+	\begin{rSection}{Research Interest}
+		Knowledge Graph Completion, Natural Language Processing, Machine Learning Methods\hfill
+		\vspace{-2mm}
+	\end{rSection}
+	
+	%----------------------------------------------------------------------------------------
+	%	EDUCATION SECTION
+	%----------------------------------------------------------------------------------------
+	
+	\vspace*{-2.0mm}
+	\begin{rSection}{Education}
+		\vspace{-1mm}		
+		{\bf Georgia Institute of Technology}, Atlanta, GA \hfill { Aug 2018 - Present} 
+		\\ Ph.D. in Computational Science and Engineering  
+		\\ Advisor: Prof. Haesun Park\hfill
+		
+		\vspace*{-2.5mm}
+		{\bf Seoul National University}, Seoul, Korea \hfill { Mar 2011 - Feb 2018} 
+		\\ B.S. in Electrical and Computer Engineering \hfill
+		\\ Minor in Computer Science \& Engineering \hfill
+				
+	\end{rSection}
+\vspace*{-2.5mm}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\vspace*{-2.0mm}
+\begin{rSection}{Research Experience}
+%		\vspace{1mm}	
+\begin{rSubsection}{Intelliquant }{Jun 2019 - Jun 2019}{Advisory Researcher}{Intelliquant.}
+	\vspace*{-1mm}
+	\item Advised machine-learning model development for the quantitative trading platform \href{https://intelliquant.co.kr/}{Intelliquant}.
+	\item Designed a short-term multi-factor model using machine learning models.
+\end{rSubsection}	
+\vspace*{-2.5mm}
+\begin{rSubsection}{NAVER Search Engine Model}{Apr 2018 - Jul 2018}{Research Intern (Advisor: Jaegul Choi)}{NAVER Corp.}
+	\item Proposed a novel algorithm for personalized search engine model
+\end{rSubsection}	
+\vspace*{-2.5mm}
+\begin{rSubsection}{Data Mining Laboratory}{Aug 2016 - Jan 2018}{Research Intern (Advisor: Professor U Kang, Lee Sael)}{Seoul National University}
+	\item Proposed a novel scalable CMTF algorithm using parallelization and caching computation results
+	\begin{itemize}
+		\vspace*{-2.5mm}
+		\item Contributed as the first author for a paper submitted to \href{https://journals.plos.org/plosone/}{\textit{PLOS ONE}}
+	\end{itemize}
+	\item Applied network-regularized tensor factorization to a patient genetic mutation dataset
+	\begin{itemize}
+		\vspace*{-2.0mm}
+		\item Contributed as the first author for a paper submitted to \href{https://www.computer.org/web/tcbb}{\textit{IEEE TCBB}}
+	\end{itemize}
+	\item Proposed a novel algorithm for sampling based dynamic tensor decomposition
+	\begin{itemize}
+		\vspace*{-2.0mm}
+		\item Contributed as a co-author for a paper published by \href{http://journals.plos.org/plosone/}{\textit{PLOS ONE}}
+		\vspace*{-2.0mm}
+		\item Awarded as bronze prize for Humantech paper award @\em{\href{https://humantech.samsung.com/saitext/index.jsp}{Samsung}}\em
+	\end{itemize}
+	\item Proposed a novel system and algorithms to track SVD of multiple time series data
+	\begin{itemize}
+		\vspace*{-2.0mm}
+		\item Contributed as a co-author for a paper published by \href{https://www.cikm2018.units.it/}{\textit{CIKM'18}}
+	\end{itemize}
+	\item Performed projects on building occupancy recognition and prediction for Intelligent Building Systems
+	\begin{itemize}
+		\vspace*{-2.0mm}
+		\item Developed wireless sensor communication module using Arduino micro-controller boards
+		\vspace*{-2.0mm}
+		\item Developed a pedestrian simulator model
+		\vspace*{-2.0mm}
+		\item Implemented \em{ResNet}\em-based transfer learning network
+	\end{itemize}
+\end{rSubsection}
+\vspace*{-2.0mm}
+
+\begin{rSubsection}{Knowledge Discovery \& Database Laboratory}{Dec 2015 - Feb 2016}{Research Intern (Advisor: Professor Kyuseok Shim)}{Seoul National University}
+	\item Implemented a previously proposed strategy on boosting subgraph isomorphism algorithms
+	\item Found out useful vertex relationships in a graph and exploited them to boost up currently existing \textit{backtracking algorithms} for subgraph isomorphism
+	\item Implemented distributed algorithms using Hadoop MapReduce
+	%\vspace{1.3cm}
+\end{rSubsection}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	Publications
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Publications}
+\begin{rSubsection}{}{}{}{}
+	\vspace*{-2.5mm}
+	
+	\item Hannah Kim, \textbf{Dongjin Choi}, Barry Drake, Alex Endert, and Haesun Park, \textit{TopicSifter: Interactive Search Space Reduction Through Targeted Topic Modeling}, \textit{IEEE VIS}, 2019.
+	
+	\item \textbf{Dongjin Choi}, Jun-gi Jang, and U Kang, \textit{S3CMTF: Fast, Accurate, and Scalable Method for Incomplete Coupled Matrix-Tensor Factorization}, PLOS ONE, 2019.
+	
+	\item \textbf{Dongjin Choi}, and Lee Sael, \textit{SNeCT: Scalable Network Constrained Tucker Decomposition for Multi-Platform Data Profiling}, \textit{IEEE TCBB}, 2019.
+	
+	\item Jun-gi Jang, \textbf{Dongjin Choi}, and U Kang, \textit{Fast and Memory Efficient Method for Time Ranged Singular Value Decomposition}, 27th ACM International Conference on Information and Knowledge Management (CIKM) 2018, Turin, Italy.
+	
+	\item Jungwoo Lee, \textbf{Dongjin Choi}, and Lee Sael, \textit{CTD: Fast, Accurate, and Interpretable Method for Static and Dynamic Tensor Decompositions}, PLOS ONE, 2018.
+	
+	\item Woojung Jin, \textbf{Dongjin Choi}, Youngjin Kim, and U Kang, \textit{Activity Prediction from Sensor Data using Convolutional Neural Networks and an Efficient Compression Method }, KIISE journal, 2018.
+	
+\end{rSubsection}
+
+\end{rSection}
+\vspace{-3mm}
+
+
+%----------------------------------------------------------------------------------------
+%	Patents
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Patents}
+	\begin{rSubsection}{}{}{}{}
+		\vspace*{-2.5mm}
+		\item U Kang, Jun-Gi Jang, \textbf{Dongjin Choi}, and Jinhong Jung, \textit{Apparatus and Method for Processing Data}, Korean Patent 10-2017-0159167, 2017.
+		\item U Kang, \textbf{Dongjin Choi}, and Jun-gi Jang, \textit{Data Analysis Method and Apparatus for Sparse Data}, Korean Patent 10-2017-0158496, 2017.
+	\end{rSubsection}
+	
+\end{rSection}
+\vspace{-3mm}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Awards and Honors}
+	\vspace*{-2.5mm}
+	\begin{rSubsection}{}{}{}{}
+		\item \textbf{Honorable Mention}, Humantech Paper Award, \em{\href{https://humantech.samsung.com/saitext/index.jsp}{Samsung}}\em \hfill Feb 2018
+		
+		\item \textbf{Bronze Prize}, Humantech Paper Award, top 6 in the CS division, \em{\href{https://humantech.samsung.com/saitext/index.jsp}{Samsung}}\em \hfill Feb 2017
+		
+		\item \textbf{National Science \& Technology Scholarship}, top 0.7\% in Korea, \href{http://www.kosaf.go.kr/}{KOSAF} \hfill 2011 - 2016
+		
+		\item \textbf{Kwon Oh-Hyun Alumni Scholarship}, additional 2,500\$/semester, \em Samsung \em \hfill 2015 - 2016
+		
+	\end{rSubsection}
+
+\end{rSection}
+%\vspace{-3mm}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Projects}
+	\begin{rSubsection}{People flow recognition and prediction}{Sep 2017 - Jan 2018}{With Sovico, Samsung (Advisor: Professor U Kang)}{Seoul National University}
+		\item Implemented a pedestrian simulator model
+		\item Proposed isolated kernel CNN model for people flow recognition
+		\item Proposed multi-scale skip connected and graph-structured RNN model for people flow prediction
+	\end{rSubsection}	
+	\begin{rSubsection}{Room occupancy detection for HVAC control}{Aug 2016 - Sep 2017}{With Smart Campus, Samsung (Advisor: Professor U Kang)}{Seoul National University}
+		\item Developed IoT sensor kits using Arduino board
+		\item Implemented server storage system with TCP communication via Wi-Fi
+		\item Applied ResNet-based CNN network with transfer learning for real-time recognition of people count and activity
+		\item Proposed RNN network for future-time prediction of people count and activity
+	\end{rSubsection}	
+%	\begin{rSubsection}{Deep learning course term project}{Mar 2017 - June 2017}{Term project for graduate deep learning course M1522.001600}{Seoul National University}
+%		\item Human identification from image data
+%		\item Crawled and collected human image data
+%		\item Identify human characteristics (gender, ethnicity) from images, with high accuracy using transfer learning technique
+%	\end{rSubsection}
+	
+\end{rSection}
+%\vspace{1cm}
+
+	%----------------------------------------------------------------------------------------
+	%	SKILLS
+	%----------------------------------------------------------------------------------------
+	
+%	\begin{rSection}{Skills}
+%		%\vspace{-1mm}		
+%		\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+%			Languages \& Libraries &  C++, MATLAB, Python \hfill (\textbf{Advanced}) \\
+%			& Tensor Toolbox, Armadillo, JAMA\\
+%			& Java, Perl, R, HTML \hfill (\textbf{Intermediate})\\
+%			& Keras, TensorFlow\\
+%		\end{tabular}
+%		
+%	\end{rSection}
+%\vspace{-3mm}
+	
+	%----------------------------------------------------------------------------------------
+	%	Reference
+	%----------------------------------------------------------------------------------------
+	
+	\begin{rSection}{Reference}
+	Available on request
+				
+	\end{rSection}
+		
+	
+\end{document}
